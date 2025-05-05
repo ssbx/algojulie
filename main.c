@@ -15,8 +15,8 @@ void nettoyage()
 {
   if (__matrice) {
     for (int z = 0; z < __mat_z; z++) {
-      for (int x = 0; x < __mat_x; x++) {
-        free(__matrice[z][x]);
+      for (int y = 0; y < __mat_y; y++) {
+        free(__matrice[z][y]);
       }
       free(__matrice[z]);
     }
